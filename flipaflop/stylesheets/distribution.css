@@ -1,0 +1,132 @@
+/* The MIT License (MIT)
+* 
+* Copyright (c) 2015 Sam Russell <sam.h.russell@gmail.com>
+* 
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+* 
+* The above copyright notice and this permission notice shall be included in all
+* copies or substantial portions of the Software.
+* 
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+*/
+
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#distribution-outer-container {
+  width: 100vmin;
+  height: 100vmin;
+}
+
+#scroll-container {
+  background-color: #aaaaaa;
+  height: 3vmin;
+  width: 91vmin;
+  font: 7%/1 Verdana, Sans-Serif;
+  font-size: 3vmin;
+}
+
+#footer {
+  background-color: #aaaaaa;
+  height: 1vmin;
+  width: 91vmin;
+  font: 3%/3 Verdana, Sans-Serif;
+  font-size: 1.5vmin;
+}
+
+#distribution-container {
+  font: 71%/15 Verdana, Sans-Serif;
+  font-size: 3vmin;
+  background: #eeeeee;
+  -moz-border-radius: 1%;
+  -webkit-border-radius: 1%;
+  width: 91vmin;
+  height: 91vmin;
+  //position:fixed;
+}
+
+#distribution {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.choice {
+  display: table;
+  height: 6vmin;
+  width: 6vmin; 
+  line-height: 1;
+  text-align: center;
+  vertical-align: middle;
+  float: left;
+  margin-left: 0.25vmin;
+  margin-right: 0.25vmin;
+  margin-top: 0.25vmin;
+  margin-bottom: 0.25vmin;
+  background: #fff;
+  border: 0.25vmin solid #f9f9f9;
+  -moz-border-radius: 20%;
+  -webkit-border-radius: 20%;
+}
+.choice span {
+  display: table-cell;
+  vertical-align: middle;
+}
+.topfiller-2 {
+    height: 0.25vmin;
+}
+.leftfiller-0 {
+  clear: both;
+  float: left;
+  margin-left: 0px;
+  width: 0px;
+}
+.rightfiller {
+  height: 6vmin;
+}
+.choice:hover {
+  position: relative;
+  top: 0.25vmin;
+  left: 0.25vmin;
+  border-color: #e5e5e5;
+  cursor: pointer;
+}
+.selected:hover {
+  position: relative;
+  top: 0.25vmin;
+  left: 0.25vmin;
+  border-color: #151515;
+  cursor: pointer;
+}
+.suited {
+  color: black;
+  background-color: #FF9800;
+}
+.pair {
+  color: black;
+  background-color: #8BC34A;
+}
+.offsuit {
+  color: black;
+  background-color: #00BCD4;
+}
+.selected {
+  color: black;
+  background-color: #FFEB3B;
+  border: 0.25vmin solid #090909;
+}

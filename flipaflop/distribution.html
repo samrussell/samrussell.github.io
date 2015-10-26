@@ -1,0 +1,257 @@
+<!--
+/* The MIT License (MIT)
+* 
+* Copyright (c) 2015 Sam Russell <sam.h.russell@gmail.com>
+* 
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+* 
+* The above copyright notice and this permission notice shall be included in all
+* copies or substantial portions of the Software.
+* 
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+*/
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Holdem Distribution</title>
+  <link rel="stylesheet" href="stylesheets/distribution.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+  <div id="distribution-outer-container">
+    <div id="distribution-container">
+      <ul id="distribution">
+        <li class="topfiller-2"></li>
+        <li class="leftfiller-0"></li>
+        <li class="choice pair"><span>AA</span></li>
+        <li class="choice suited"><span>AK</span></li>
+        <li class="choice suited"><span>AQ</span></li>
+        <li class="choice suited"><span>AJ</span></li>
+        <li class="choice suited"><span>AT</span></li>
+        <li class="choice suited"><span>A9</span></li>
+        <li class="choice suited"><span>A8</span></li>
+        <li class="choice suited"><span>A7</span></li>
+        <li class="choice suited"><span>A6</span></li>
+        <li class="choice suited"><span>A5</span></li>
+        <li class="choice suited"><span>A4</span></li>
+        <li class="choice suited"><span>A3</span></li>
+        <li class="choice suited"><span>A2</span></li>
+        <li class="rightfiller"></li>
+        <li class="topfiller-2"></li>
+        <li class="leftfiller-0"></li>
+        <li class="choice offsuit"><span>AK</span></li>
+        <li class="choice pair"><span>KK</span></li>
+        <li class="choice suited"><span>KQ</span></li>
+        <li class="choice suited"><span>KJ</span></li>
+        <li class="choice suited"><span>KT</span></li>
+        <li class="choice suited"><span>K9</span></li>
+        <li class="choice suited"><span>K8</span></li>
+        <li class="choice suited"><span>K7</span></li>
+        <li class="choice suited"><span>K6</span></li>
+        <li class="choice suited"><span>K5</span></li>
+        <li class="choice suited"><span>K4</span></li>
+        <li class="choice suited"><span>K3</span></li>
+        <li class="choice suited"><span>K2</span></li>
+        <li class="rightfiller"></li>
+        <li class="topfiller-2"></li>
+        <li class="leftfiller-0"></li>
+        <li class="choice offsuit"><span>AQ</span></li>
+        <li class="choice offsuit"><span>KQ</span></li>
+        <li class="choice pair"><span>QQ</span></li>
+        <li class="choice suited"><span>QJ</span></li>
+        <li class="choice suited"><span>QT</span></li>
+        <li class="choice suited"><span>Q9</span></li>
+        <li class="choice suited"><span>Q8</span></li>
+        <li class="choice suited"><span>Q7</span></li>
+        <li class="choice suited"><span>Q6</span></li>
+        <li class="choice suited"><span>Q5</span></li>
+        <li class="choice suited"><span>Q4</span></li>
+        <li class="choice suited"><span>Q3</span></li>
+        <li class="choice suited"><span>Q2</span></li>
+        <li class="rightfiller"></li>
+        <li class="topfiller-2"></li>
+        <li class="leftfiller-0"></li>
+        <li class="choice offsuit"><span>AJ</span></li>
+        <li class="choice offsuit"><span>KJ</span></li>
+        <li class="choice offsuit"><span>QJ</span></li>
+        <li class="choice pair"><span>JJ</span></li>
+        <li class="choice suited"><span>JT</span></li>
+        <li class="choice suited"><span>J9</span></li>
+        <li class="choice suited"><span>J8</span></li>
+        <li class="choice suited"><span>J7</span></li>
+        <li class="choice suited"><span>J6</span></li>
+        <li class="choice suited"><span>J5</span></li>
+        <li class="choice suited"><span>J4</span></li>
+        <li class="choice suited"><span>J3</span></li>
+        <li class="choice suited"><span>J2</span></li>
+        <li class="rightfiller"></li>
+        <li class="topfiller-2"></li>
+        <li class="leftfiller-0"></li>
+        <li class="choice offsuit"><span>AT</span></li>
+        <li class="choice offsuit"><span>KT</span></li>
+        <li class="choice offsuit"><span>QT</span></li>
+        <li class="choice offsuit"><span>JT</span></li>
+        <li class="choice pair"><span>TT</span></li>
+        <li class="choice suited"><span>T9</span></li>
+        <li class="choice suited"><span>T8</span></li>
+        <li class="choice suited"><span>T7</span></li>
+        <li class="choice suited"><span>T6</span></li>
+        <li class="choice suited"><span>T5</span></li>
+        <li class="choice suited"><span>T4</span></li>
+        <li class="choice suited"><span>T3</span></li>
+        <li class="choice suited"><span>T2</span></li>
+        <li class="rightfiller"></li>
+        <li class="topfiller-2"></li>
+        <li class="leftfiller-0"></li>
+        <li class="choice offsuit"><span>A9</span></li>
+        <li class="choice offsuit"><span>K9</span></li>
+        <li class="choice offsuit"><span>Q9</span></li>
+        <li class="choice offsuit"><span>J9</span></li>
+        <li class="choice offsuit"><span>T9</span></li>
+        <li class="choice pair"><span>99</span></li>
+        <li class="choice suited"><span>98</span></li>
+        <li class="choice suited"><span>97</span></li>
+        <li class="choice suited"><span>96</span></li>
+        <li class="choice suited"><span>95</span></li>
+        <li class="choice suited"><span>94</span></li>
+        <li class="choice suited"><span>93</span></li>
+        <li class="choice suited"><span>92</span></li>
+        <li class="rightfiller"></li>
+        <li class="topfiller-2"></li>
+        <li class="leftfiller-0"></li>
+        <li class="choice offsuit"><span>A8</span></li>
+        <li class="choice offsuit"><span>K8</span></li>
+        <li class="choice offsuit"><span>Q8</span></li>
+        <li class="choice offsuit"><span>J8</span></li>
+        <li class="choice offsuit"><span>T8</span></li>
+        <li class="choice offsuit"><span>98</span></li>
+        <li class="choice pair"><span>88</span></li>
+        <li class="choice suited"><span>87</span></li>
+        <li class="choice suited"><span>86</span></li>
+        <li class="choice suited"><span>85</span></li>
+        <li class="choice suited"><span>84</span></li>
+        <li class="choice suited"><span>83</span></li>
+        <li class="choice suited"><span>82</span></li>
+        <li class="rightfiller"></li>
+        <li class="topfiller-2"></li>
+        <li class="leftfiller-0"></li>
+        <li class="choice offsuit"><span>A7</span></li>
+        <li class="choice offsuit"><span>K7</span></li>
+        <li class="choice offsuit"><span>Q7</span></li>
+        <li class="choice offsuit"><span>J7</span></li>
+        <li class="choice offsuit"><span>T7</span></li>
+        <li class="choice offsuit"><span>97</span></li>
+        <li class="choice offsuit"><span>87</span></li>
+        <li class="choice pair"><span>77</span></li>
+        <li class="choice suited"><span>76</span></li>
+        <li class="choice suited"><span>75</span></li>
+        <li class="choice suited"><span>74</span></li>
+        <li class="choice suited"><span>73</span></li>
+        <li class="choice suited"><span>72</span></li>
+        <li class="rightfiller"></li>
+        <li class="topfiller-2"></li>
+        <li class="leftfiller-0"></li>
+        <li class="choice offsuit"><span>A6</span></li>
+        <li class="choice offsuit"><span>K6</span></li>
+        <li class="choice offsuit"><span>Q6</span></li>
+        <li class="choice offsuit"><span>J6</span></li>
+        <li class="choice offsuit"><span>T6</span></li>
+        <li class="choice offsuit"><span>96</span></li>
+        <li class="choice offsuit"><span>86</span></li>
+        <li class="choice offsuit"><span>76</span></li>
+        <li class="choice pair"><span>66</span></li>
+        <li class="choice suited"><span>65</span></li>
+        <li class="choice suited"><span>64</span></li>
+        <li class="choice suited"><span>63</span></li>
+        <li class="choice suited"><span>62</span></li>
+        <li class="rightfiller"></li>
+        <li class="topfiller-2"></li>
+        <li class="leftfiller-0"></li>
+        <li class="choice offsuit"><span>A5</span></li>
+        <li class="choice offsuit"><span>K5</span></li>
+        <li class="choice offsuit"><span>Q5</span></li>
+        <li class="choice offsuit"><span>J5</span></li>
+        <li class="choice offsuit"><span>T5</span></li>
+        <li class="choice offsuit"><span>95</span></li>
+        <li class="choice offsuit"><span>85</span></li>
+        <li class="choice offsuit"><span>75</span></li>
+        <li class="choice offsuit"><span>65</span></li>
+        <li class="choice pair"><span>55</span></li>
+        <li class="choice suited"><span>54</span></li>
+        <li class="choice suited"><span>53</span></li>
+        <li class="choice suited"><span>52</span></li>
+        <li class="rightfiller"></li>
+        <li class="topfiller-2"></li>
+        <li class="leftfiller-0"></li>
+        <li class="choice offsuit"><span>A4</span></li>
+        <li class="choice offsuit"><span>K4</span></li>
+        <li class="choice offsuit"><span>Q4</span></li>
+        <li class="choice offsuit"><span>J4</span></li>
+        <li class="choice offsuit"><span>T4</span></li>
+        <li class="choice offsuit"><span>94</span></li>
+        <li class="choice offsuit"><span>84</span></li>
+        <li class="choice offsuit"><span>74</span></li>
+        <li class="choice offsuit"><span>64</span></li>
+        <li class="choice offsuit"><span>54</span></li>
+        <li class="choice pair"><span>44</span></li>
+        <li class="choice suited"><span>43</span></li>
+        <li class="choice suited"><span>42</span></li>
+        <li class="rightfiller"></li>
+        <li class="topfiller-2"></li>
+        <li class="leftfiller-0"></li>
+        <li class="choice offsuit"><span>A3</span></li>
+        <li class="choice offsuit"><span>K3</span></li>
+        <li class="choice offsuit"><span>Q3</span></li>
+        <li class="choice offsuit"><span>J3</span></li>
+        <li class="choice offsuit"><span>T3</span></li>
+        <li class="choice offsuit"><span>93</span></li>
+        <li class="choice offsuit"><span>83</span></li>
+        <li class="choice offsuit"><span>73</span></li>
+        <li class="choice offsuit"><span>63</span></li>
+        <li class="choice offsuit"><span>53</span></li>
+        <li class="choice offsuit"><span>43</span></li>
+        <li class="choice pair"><span>33</span></li>
+        <li class="choice suited"><span>32</span></li>
+        <li class="rightfiller"></li>
+        <li class="topfiller-2"></li>
+        <li class="leftfiller-0"></li>
+        <li class="choice offsuit"><span>A2</span></li>
+        <li class="choice offsuit"><span>K2</span></li>
+        <li class="choice offsuit"><span>Q2</span></li>
+        <li class="choice offsuit"><span>J2</span></li>
+        <li class="choice offsuit"><span>T2</span></li>
+        <li class="choice offsuit"><span>92</span></li>
+        <li class="choice offsuit"><span>82</span></li>
+        <li class="choice offsuit"><span>72</span></li>
+        <li class="choice offsuit"><span>62</span></li>
+        <li class="choice offsuit"><span>52</span></li>
+        <li class="choice offsuit"><span>42</span></li>
+        <li class="choice offsuit"><span>32</span></li>
+        <li class="choice pair"><span>22</span></li>
+        <li class="rightfiller"></li>
+      </ul>
+    </div>
+    <div id="scroll-container">
+      0.0%
+    </div>
+    <div id="footer">
+      Copyright (c) 2015 <a href="http://github.com/samrussell">Sam Russell</a>
+    </div>
+  </div>
+  <script src="javascripts/distribution.js"></script>
+</body>
+</html>
