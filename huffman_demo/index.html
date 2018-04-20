@@ -1,16 +1,49 @@
 <html>
   <head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-89635433-2"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-
-			gtag('config', 'UA-89635433-2');
-		</script>
-
     <title>Huffman coding demo</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89635433-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-89635433-2');
+    </script>
+    <style>
+      body {
+        font-family: arial;
+      }
+      .container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+      }
+      .container div {
+        display: flex;
+        flex-flow: column;
+      }
+      #visualCodes {
+        display: flex;
+        flex-flow: row wrap;
+      }
+      .visualCode {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border-style: solid;
+        border-width: 0.2em;
+      }
+      .visualCode:nth-child(odd) {
+        background-color: #FF9800; // orange 500
+      }
+      .visualCode:nth-child(even) {
+        background-color: #03A9F4; // light blue 500
+      }
+      .visualCode span {
+        text-align: center;
+      }
+    </style>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script>
       var sortCounts = function(a, b){
@@ -66,6 +99,7 @@
 
         if(counts.length < 2){
           $("#codes").val("");
+          $("#visualCodes").empty();
           return;
         }
 
@@ -98,6 +132,22 @@
           codes.map(x => (x.symbol + ":").padEnd(7, " ") + x.code)
             .join("\n")
         );
+
+        var codeMap = new Map();
+        codes.forEach(function(code){
+          codeMap[code.symbol] = code.code;
+        });
+
+        // this is going to be quite churny, should come up with a better way of managing this
+        // i can see a refactor for each event bubbling one change
+        // although refreshing the huffman codes means we might need to at least update half of the stuff here
+        // but shouldn't need to kill the whole contents of it
+        $("#visualCodes").empty();
+        $("#plaintext").val().split("").forEach(function(char){
+          $("#visualCodes").append(
+            $("<div class=\"visualCode\"><span>" + char + "</span><span>" + codeMap[char] + "</span></div>")
+          );
+        });
       };
 
       var calculateCounts = function(numbers){
@@ -154,24 +204,30 @@
   </head>
   <body>
     <div>
-      Plaintext<br />
-      <textarea id="plaintext" cols=50 rows=5>I went to an Ivy League school, I'm very highly educated. I know words, I had the best words. I have - but there's no better word than stupid.</textarea>
+      <div id="visualCodes">
+      </div>
     </div>
-    <div style="display: none;">
-      Plaintext as numbers<br />
-      <textarea id="numbers" cols=50, rows=10></textarea>
-    </div>
-    <div style="display: none;">
-      Frequencies of each number<br />
-      <textarea id="counts" cols=20, rows=20></textarea>
-    </div>
-    <div>
-      Frequencies of each letter<br />
-      <textarea id="letterCounts" cols=20, rows=20></textarea>
-    </div>
-    <div>
-      Huffman codes<br />
-      <textarea id="codes" cols=20, rows=20></textarea>
+    <div class="container">
+      <div>
+        Plaintext<br />
+        <textarea id="plaintext" cols=50 rows=5>I went to an Ivy League school, I'm very highly educated. I know words, I had the best words. I have - but there's no better word than stupid.</textarea>
+      </div>
+      <div style="display: none;">
+        Plaintext as numbers<br />
+        <textarea id="numbers" cols=50, rows=10></textarea>
+      </div>
+      <div style="display: none;">
+        Frequencies of each number<br />
+        <textarea id="counts" cols=20, rows=20></textarea>
+      </div>
+      <div>
+        Frequencies of each letter<br />
+        <textarea id="letterCounts" cols=20, rows=20></textarea>
+      </div>
+      <div>
+        Huffman codes<br />
+        <textarea id="codes" cols=20, rows=20></textarea>
+      </div>
     </div>
   </body>
 </html>
