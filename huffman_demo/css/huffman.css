@@ -1,0 +1,32 @@
+body {
+  font-family: arial;
+}
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.container div {
+  display: flex;
+  flex-flow: column;
+}
+#visualCodes {
+  display: flex;
+  flex-flow: row wrap;
+}
+.visualCode {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-style: solid;
+  border-width: 0.2em;
+}
+.visualCode:nth-child(odd) {
+  background-color: #FF9800; // orange 500
+}
+.visualCode:nth-child(even) {
+  background-color: #03A9F4; // light blue 500
+}
+.visualCode span {
+  text-align: center;
+}
