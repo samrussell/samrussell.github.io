@@ -10,7 +10,7 @@
 
       function testInput(){
         input = document.getElementById("input").value
-        matches = input.matchAll(/([a-zA-ZąćłńóśżźĄĆŁŃÓŚŻŃ]+)([^a-zA-ZąćłńóśżźĄĆŁŃÓŚŻŃ]*)/g)
+        matches = input.matchAll(/([a-zA-ZąćęłńóśżźĄĆĘŁŃÓŚŻŃ]+)([^a-zA-ZąćęłńóśżźĄĆĘŁŃÓŚŻŃ]*)/g)
         var output = "";
         for(match of matches){
           word = match[1];
