@@ -23,10 +23,11 @@
           }
           output += following;
         }
-        document.getElementById("output").innerHTML = output;
+        formatted_output = output.replace(/\n/g, '<br />');
+        document.getElementById("output").innerHTML = formatted_output;
       }
     </script>
     <textarea id="input" oninput="testInput()" rows=20 cols=100></textarea>
-    <pre id="output"></pre>
+    <div id="output"></div>
   </body>
 </html>
