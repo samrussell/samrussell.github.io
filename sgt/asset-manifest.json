@@ -1,10 +1,10 @@
 {
-  "app.js": "/sgt/static/js/app.22581706.chunk.js",
-  "app.b4768da6ecc8308431b2.map": "/sgt/b4768da6ecc8308431b2.map",
+  "app.js": "/sgt/static/js/app.2dd82d0e.chunk.js",
+  "app.c592841d9672438bb85e.map": "/sgt/c592841d9672438bb85e.map",
   "runtime~app.js": "/sgt/static/js/runtime~app.22e4b205.js",
   "runtime~app.8e7cf47d2b58f0d0ad83.map": "/sgt/8e7cf47d2b58f0d0ad83.map",
-  "static/js/2.8d92a42b.chunk.js": "/sgt/static/js/2.8d92a42b.chunk.js",
-  "70bed29ad435cf456a0d.map": "/sgt/70bed29ad435cf456a0d.map",
+  "static/js/2.c72a4478.chunk.js": "/sgt/static/js/2.c72a4478.chunk.js",
+  "c482ec77412d44e1a18f.map": "/sgt/c482ec77412d44e1a18f.map",
   "apple/icons/icon_180x180.png": "/sgt/apple/icons/icon_180x180.png",
   "apple/icons/icon_192x192.png": "/sgt/apple/icons/icon_192x192.png",
   "apple/icons/icon_512x512.png": "/sgt/apple/icons/icon_512x512.png",
@@ -25,10 +25,10 @@
   "favicon.ico": "/sgt/favicon.ico",
   "index.html": "/sgt/index.html",
   "manifest.json": "/sgt/manifest.json",
-  "precache-manifest.cade0a2fcdf362dd23dc0834428390c9.js": "/sgt/precache-manifest.cade0a2fcdf362dd23dc0834428390c9.js",
+  "precache-manifest.4cedb679e456214e0f0f8f1c3961b59b.js": "/sgt/precache-manifest.4cedb679e456214e0f0f8f1c3961b59b.js",
   "serve.json": "/sgt/serve.json",
   "service-worker.js": "/sgt/service-worker.js",
-  "static/js/2.8d92a42b.chunk.js.gz": "/sgt/static/js/2.8d92a42b.chunk.js.gz",
-  "static/js/app.22581706.chunk.js.gz": "/sgt/static/js/app.22581706.chunk.js.gz",
+  "static/js/2.c72a4478.chunk.js.gz": "/sgt/static/js/2.c72a4478.chunk.js.gz",
+  "static/js/app.2dd82d0e.chunk.js.gz": "/sgt/static/js/app.2dd82d0e.chunk.js.gz",
   "static/js/runtime~app.22e4b205.js.gz": "/sgt/static/js/runtime~app.22e4b205.js.gz"
 }
