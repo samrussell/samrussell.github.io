@@ -4,16 +4,16 @@ self.__precacheManifest = [
     "url": "/sgt/apple/splash/icon_1242x2688.png"
   },
   {
-    "revision": "3be1b6eea7aba91c0e21",
-    "url": "/sgt/static/js/app.7c08f65c.chunk.js"
-  },
-  {
-    "revision": "11cc97f7cbb2629caef299afde88abc6",
-    "url": "/sgt/static/js/app.7c08f65c.chunk.js.gz"
+    "revision": "91c7112241e531d9a448",
+    "url": "/sgt/static/js/app.b8403f4f.chunk.js"
   },
   {
     "revision": "bbdc48fa17057a765f99d38dc4c4e5e3",
     "url": "/sgt/static/js/runtime~app.22e4b205.js.gz"
+  },
+  {
+    "revision": "528e0fbd0dde47311cb1dc83b36767a3",
+    "url": "/sgt/static/js/app.b8403f4f.chunk.js.gz"
   },
   {
     "revision": "8e7cf47d2b58f0d0ad83",
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/sgt/apple/splash/icon_2208x1242.png"
   },
   {
-    "revision": "f021b6037269cbd8a0e0099b4f1a5341",
-    "url": "/sgt/static/js/2.f212aeb3.chunk.js.gz"
+    "revision": "ca265a253563aa0a54e7d4870060514a",
+    "url": "/sgt/static/js/2.ffe95599.chunk.js.gz"
   },
   {
     "revision": "1ef05e93d98cb8bbacbb68fad46ca706",
@@ -36,19 +36,19 @@ self.__precacheManifest = [
     "url": "/sgt/expo-service-worker.js"
   },
   {
-    "revision": "388c7b74d809b5e4b722",
-    "url": "/sgt/static/js/2.f212aeb3.chunk.js"
-  },
-  {
     "revision": "16709f23227d220b53e235a942bf292c",
     "url": "/sgt/expo-service-worker.js.gz"
+  },
+  {
+    "revision": "6d768082db1ea7caafb2",
+    "url": "/sgt/static/js/2.ffe95599.chunk.js"
   },
   {
     "revision": "d0c694b562b2208635f250762cd7fc79",
     "url": "/sgt/serve.json"
   },
   {
-    "revision": "9c3308c96dd2a32c587ca8eef105ce18",
+    "revision": "cfbb1dca2c5e6c8dd41b07622ef9013d",
     "url": "/sgt/index.html"
   },
   {
