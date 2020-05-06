@@ -1,11 +1,11 @@
 {
   "files": {
-    "app.js": "/sgt/static/js/app.07a6e60c.chunk.js",
-    "app.js.map": "/sgt/static/js/app.07a6e60c.chunk.js.map",
+    "app.js": "/sgt/static/js/app.bedad092.chunk.js",
+    "app.js.map": "/sgt/static/js/app.bedad092.chunk.js.map",
     "runtime~app.js": "/sgt/static/js/runtime~app.1b6224f9.js",
     "runtime~app.js.map": "/sgt/static/js/runtime~app.1b6224f9.js.map",
-    "static/js/2.e24f9c16.chunk.js": "/sgt/static/js/2.e24f9c16.chunk.js",
-    "static/js/2.e24f9c16.chunk.js.map": "/sgt/static/js/2.e24f9c16.chunk.js.map",
+    "static/js/2.dfee41fd.chunk.js": "/sgt/static/js/2.dfee41fd.chunk.js",
+    "static/js/2.dfee41fd.chunk.js.map": "/sgt/static/js/2.dfee41fd.chunk.js.map",
     "favicon-16.png": "/sgt/favicon-16.png",
     "favicon-32.png": "/sgt/favicon-32.png",
     "favicon.ico": "/sgt/favicon.ico",
@@ -15,7 +15,7 @@
   },
   "entrypoints": [
     "static/js/runtime~app.1b6224f9.js",
-    "static/js/2.e24f9c16.chunk.js",
-    "static/js/app.07a6e60c.chunk.js"
+    "static/js/2.dfee41fd.chunk.js",
+    "static/js/app.bedad092.chunk.js"
   ]
 }
