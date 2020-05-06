@@ -4,16 +4,16 @@ self.__precacheManifest = [
     "url": "/sgt/favicon-16.png"
   },
   {
-    "revision": "469bf26137de1106c30b",
-    "url": "/sgt/static/js/app.7c556890.chunk.js"
+    "revision": "2a490fd1517b7e7681fa",
+    "url": "/sgt/static/js/app.07a6e60c.chunk.js"
   },
   {
     "revision": "cb92342d136c765a5b78",
     "url": "/sgt/static/js/runtime~app.1b6224f9.js"
   },
   {
-    "revision": "04faa4b3a3ec24f4b575",
-    "url": "/sgt/static/js/2.afa83c8b.chunk.js"
+    "revision": "cdbdcfe9b3e95d120f67",
+    "url": "/sgt/static/js/2.e24f9c16.chunk.js"
   },
   {
     "revision": "d0c694b562b2208635f250762cd7fc79",
@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/sgt/manifest.json"
   },
   {
-    "revision": "a225adcbeee9809f674c40e3b2810bf7",
+    "revision": "7509c11e342e1e88475c96363c1f5731",
     "url": "/sgt/index.html"
   },
   {
